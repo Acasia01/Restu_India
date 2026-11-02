@@ -1,0 +1,15 @@
+# robots.txt for Resatu India (https://resatuindia.in)
+User-agent: *
+Allow: /
+Allow: /products
+Allow: /contact
+Allow: /quotation
+
+# Disallow private and administrative areas
+Disallow: /admin
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://resatuindia.in/sitemap.xml
