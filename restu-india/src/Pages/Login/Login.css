@@ -1,0 +1,106 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #F9F6F3;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.login-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border: 1.5px solid #EDE8E3;
+  border-radius: 14px;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card h1 {
+  margin: 0 0 0.4rem;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.06em;
+  font-size: 1.9rem;
+  color: #1A1218;
+}
+
+.login-subtitle {
+  margin: 0 0 1.5rem;
+  font-size: 0.85rem;
+  color: #9CA3AF;
+}
+
+.login-card label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border: 1.5px solid #EDE8E3;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 1.1rem;
+  background: #fff;
+  color: #1A1218;
+  box-sizing: border-box;
+}
+
+.login-card input:focus {
+  border-color: #C4705A;
+}
+
+.login-card button {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #1A1218;
+  color: #FDFBF9;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.login-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-error {
+  background: #FEF2F2;
+  color: #B91C1C;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.login-footer-text {
+  margin: 1.25rem 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: #6B7280;
+}
+
+.login-footer-text a {
+  color: #C4705A;
+  font-weight: 700;
+  text-decoration: none;
+}

@@ -1,0 +1,355 @@
+.category-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.category-search {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #ede8e3;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fdfbf9;
+  outline: none;
+}
+
+.add-category-btn {
+  background: #1a1218;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.category-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.category-table th {
+  background: #f9f6f3;
+  padding: 12px;
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.category-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f5f0eb;
+}
+
+.alt-row {
+  background: #fdfbf9;
+}
+
+.category-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-image,
+.category-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.category-image {
+  object-fit: cover;
+  border: 1px solid #ede8e3;
+}
+
+.category-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+}
+
+.category-name {
+  font-weight: 600;
+}
+
+.slug-cell {
+  color: #9ca3af;
+  font-family: monospace;
+}
+
+.description-cell {
+  display: block;
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-count {
+  background: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn,
+.cancel-btn,
+.save-btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+
+.edit-btn,
+.cancel-btn {
+  background: #ede8e3;
+}
+
+.delete-btn {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.save-btn {
+  background: #1a1218;
+  color: #fff;
+}
+
+.empty-message {
+  text-align: center;
+  color: #9ca3af;
+  padding: 3rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 18, 24, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  z-index: 500;
+}
+
+.modal-content {
+  background: #fdfbf9;
+  border-radius: 14px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+.modal-title {
+  margin-bottom: 1.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.06em;
+}
+
+.form-group-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1.5px solid #ede8e3;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* Mobile Responsive Overrides for Categories */
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .category-table {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    border: none !important;
+  }
+
+  .category-table thead {
+    display: none !important;
+  }
+
+  .category-table tbody {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .category-table tr {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    background: #fff !important;
+    border: 1.5px solid #EDE8E3 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    margin-bottom: 16px !important;
+    box-shadow: 0 2px 8px rgba(10, 61, 107, 0.02) !important;
+    overflow: hidden !important;
+  }
+
+  .category-table td {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 10px 12px 10px 42% !important; /* Leave 42% on left for absolute label */
+    border-bottom: 1px solid #F5F0EB !important;
+    text-align: right !important;
+    min-height: 44px;
+  }
+
+  .category-table td:last-child {
+    border-bottom: none !important;
+    padding-bottom: 8px !important;
+  }
+
+  /* Absolute position for the pseudo elements labels */
+  .category-table td::before {
+    position: absolute !important;
+    left: 12px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-weight: 700 !important;
+    color: #9CA3AF !important;
+    font-size: 11px !important;
+    text-transform: uppercase !important;
+    text-align: left !important;
+    width: 36% !important;
+    white-space: normal !important;
+    pointer-events: none !important;
+  }
+
+  /* Format values inside card cells */
+  .category-table td > * {
+    display: inline-flex !important;
+    vertical-align: middle !important;
+    max-width: 100% !important;
+    text-align: right !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+  }
+
+  .category-info {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    max-width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .category-name {
+    font-weight: 600 !important;
+    text-align: right !important;
+  }
+
+  /* Higher specificity to override inline-flex on text cells */
+  .category-table td .table-text-val,
+  .category-table td .description-cell {
+    display: inline-block !important;
+    max-width: 100% !important;
+    text-align: right !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+    color: #374151 !important;
+  }
+
+  .category-table td .slug-cell {
+    display: inline-block !important;
+    max-width: 100% !important;
+    text-align: right !important;
+    word-break: break-all !important;
+    white-space: normal !important;
+    color: #9ca3af !important; /* Keep secondary gray color */
+  }
+
+  .category-table td .description-cell {
+    text-overflow: unset !important;
+    overflow: visible !important;
+  }
+
+  .action-buttons {
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-end !important;
+    gap: 6px !important;
+    max-width: 100% !important;
+  }
+
+  .action-buttons button {
+    margin: 0 !important;
+    padding: 5px 10px !important;
+    font-size: 11px !important;
+  }
+
+  /* Label mappings via CSS pseudo elements */
+  .category-table td:nth-child(1)::before { content: "Category"; }
+  .category-table td:nth-child(2)::before { content: "Slug"; }
+  .category-table td:nth-child(3)::before { content: "Description"; }
+  .category-table td:nth-child(4)::before { content: "Products"; }
+  .category-table td:nth-child(5)::before { content: "Actions"; }
+
+  /* Toolbar styling for search inputs */
+  .category-toolbar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+  }
+
+  .category-search {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+
+  .modal-content {
+    padding: 1.25rem !important;
+  }
+}

@@ -1,0 +1,58 @@
+/* SECTION */
+.section {
+    padding: 3rem 1rem;
+    width: 100%;
+}
+
+.section + .section {
+    padding-top: 1rem;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-alt {
+    background: #f8fbff;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #0a3d6b;
+    margin-bottom: 0.5rem;
+}
+
+.section-sub {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    margin-bottom: 2.5rem;
+}
+
+/* TABS */
+.tab-bar {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 1.5rem;
+    background: #eaf5ff;
+    padding: 4px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.tab {
+    padding: 7px 16px;
+    border-radius: 7px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: #0a3d6b;
+    transition: all 0.15s;
+}
+
+.tab.active {
+    background: #0a3d6b;
+    color: white;
+}

@@ -1,0 +1,6 @@
+export const icons = {
+  beds: `<svg viewBox="0 0 64 64" fill="none" stroke="#1e8fff" strokeWidth="2"><rect x="4" y="28" width="56" height="16" rx="3"/><line x1="4" y1="36" x2="60" y2="36"/><rect x="8" y="16" width="28" height="14" rx="2"/><line x1="4" y1="44" x2="4" y2="52"/><line x1="60" y1="44" x2="60" y2="52"/><circle cx="12" cy="52" r="3"/><circle cx="52" cy="52" r="3"/></svg>`,
+  trolleys: `<svg viewBox="0 0 64 64" fill="none" stroke="#1e8fff" strokeWidth="2"><rect x="12" y="8" width="40" height="10" rx="2"/><rect x="12" y="22" width="40" height="10" rx="2"/><rect x="12" y="36" width="40" height="10" rx="2"/><line x1="12" y1="18" x2="12" y2="46"/><line x1="52" y1="18" x2="52" y2="46"/><circle cx="20" cy="54" r="4"/><circle cx="44" cy="54" r="4"/></svg>`,
+  furniture: `<svg viewBox="0 0 64 64" fill="none" stroke="#1e8fff" strokeWidth="2"><rect x="8" y="20" width="48" height="28" rx="3"/><line x1="8" y1="35" x2="56" y2="35"/><line x1="8" y1="28" x2="56" y2="28"/><line x1="16" y1="48" x2="16" y2="56"/><line x1="48" y1="48" x2="48" y2="56"/><rect x="20" y="8" width="24" height="12" rx="2"/></svg>`,
+  other: `<svg viewBox="0 0 64 64" fill="none" stroke="#1e8fff" strokeWidth="2"><circle cx="32" cy="32" r="22"/><path d="M32 20v12l8 8"/></svg>`
+};
