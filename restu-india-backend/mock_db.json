@@ -1,0 +1,205 @@
+{
+  "users": [
+    {
+      "_id": "admin_user_id",
+      "name": "System Admin",
+      "email": "admin@restuindia.in",
+      "password": "adminpassword",
+      "role": "admin",
+      "createdAt": "2026-06-17T11:47:00.242Z"
+    },
+    {
+      "_id": "user_1781696899872",
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2026-06-17T11:48:19.872Z"
+    }
+  ],
+  "categories": [
+    {
+      "_id": "cat_beds",
+      "name": "Beds",
+      "slug": "beds",
+      "description": "Premium hospital and fowler beds.",
+      "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "_id": "cat_trolleys",
+      "name": "Trolleys",
+      "slug": "trolleys",
+      "description": "Stretcher and crash cart trolleys.",
+      "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "_id": "cat_furniture",
+      "name": "Furniture",
+      "slug": "furniture",
+      "description": "Ward lockers and bedside tables.",
+      "image": "/uploads/img_1781726018586_246416474.png"
+    },
+    {
+      "_id": "cat_wheelchairs",
+      "name": "Wheelchairs",
+      "slug": "wheelchairs",
+      "description": "Manual and motorized wheelchairs.",
+      "image": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "_id": "cat_icu",
+      "name": "ICU Equipment",
+      "slug": "icu-equipment",
+      "description": "Patient monitors and ICU ventilators.",
+      "image": "/uploads/img_1781726007202_945309622.png"
+    },
+    {
+      "_id": "cat_1781724876362",
+      "name": "testtest1",
+      "description": "asknd",
+      "image": "/uploads/img_1781725991711_990517901.png",
+      "slug": "test",
+      "createdAt": "2026-06-17T19:34:36.362Z"
+    }
+  ],
+  "products": [
+    {
+      "_id": "prod_1",
+      "name": "Manual ICU Bed (ABS Panel)",
+      "code": "MSHFM-1001",
+      "category": {
+        "id": "cat_beds",
+        "_id": "cat_beds",
+        "name": "Beds",
+        "slug": "beds"
+      },
+      "price": 24999,
+      "comparePrice": 28999,
+      "emoji": "🛏️",
+      "description": "Durable manual ICU bed with ABS panels, ideal for hospitals and home care.",
+      "isFeatured": true,
+      "isNew": true,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80"
+      ],
+      "tags": [
+        "icu",
+        "bed"
+      ],
+      "variants": [
+        {
+          "size": "Standard",
+          "stock": 12
+        }
+      ]
+    },
+    {
+      "_id": "prod_2",
+      "name": "Electric Fowler Bed (ABS Panel & Railing)",
+      "code": "MSHFM-1003",
+      "category": {
+        "id": "cat_beds",
+        "_id": "cat_beds",
+        "name": "Beds",
+        "slug": "beds"
+      },
+      "price": 54999,
+      "emoji": "🛏️",
+      "description": "Electric fowler bed with adjustable backrest, knee rest and side railings.",
+      "isFeatured": true,
+      "isNew": false,
+      "isActive": true,
+      "images": [
+        "/uploads/img_1781726719996_259483999.png"
+      ],
+      "tags": [
+        "fowler",
+        "bed",
+        "electric"
+      ],
+      "variants": [
+        {
+          "size": "Standard",
+          "stock": 8
+        }
+      ],
+      "updatedAt": "2026-06-17T20:05:22.629Z"
+    },
+    {
+      "_id": "prod_3",
+      "name": "Stretcher Trolley",
+      "code": "MSHFM-1031",
+      "category": {
+        "id": "cat_trolleys",
+        "_id": "cat_trolleys",
+        "name": "Trolleys",
+        "slug": "trolleys"
+      },
+      "price": 15999,
+      "emoji": "🛒",
+      "description": "Heavy-duty stretcher trolley with smooth-rolling castor wheels.",
+      "isFeatured": false,
+      "isNew": false,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
+      ],
+      "tags": [
+        "stretcher",
+        "trolley"
+      ],
+      "variants": [
+        {
+          "size": "Standard",
+          "stock": 20
+        }
+      ]
+    }
+  ],
+  "enquiries": [
+    {
+      "_id": "enq_1",
+      "name": "Dr. Rajesh Sharma",
+      "email": "rajesh@maxhealthcare.com",
+      "phone": "9876543210",
+      "company": "Max Healthcare",
+      "purpose": "Hospital Setup",
+      "message": "Need a quote for 15 Electric Fowler Beds and 5 Stretcher Trolleys.",
+      "status": "new",
+      "createdAt": "2026-06-17T11:47:00.243Z"
+    }
+  ],
+  "orders": [
+    {
+      "_id": "ord_1",
+      "orderNumber": "RI-1718233920123",
+      "user": {
+        "_id": "admin_user_id",
+        "name": "System Admin",
+        "email": "admin@restuindia.in"
+      },
+      "items": [
+        {
+          "product": "prod_1",
+          "name": "Manual ICU Bed (ABS Panel)",
+          "price": 24999,
+          "qty": 2,
+          "emoji": "🛏️",
+          "size": "Standard"
+        }
+      ],
+      "shipping": {
+        "fullName": "Dr. Rajesh",
+        "line1": "Saket Institutional Area",
+        "city": "New Delhi",
+        "pincode": "110017",
+        "phone": "9876543210"
+      },
+      "totalPrice": 49998,
+      "status": "pending",
+      "isPaid": false,
+      "createdAt": "2026-06-17T11:47:00.243Z"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# Block direct browser access to .env and sensitive files
+<FilesMatch "^\.env|composer\.(json|lock)|\.git">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Block access to .env via RewriteRule as additional protection
+    RewriteRule ^\.env - [F,L,NC]
+
+    # Pass Authorization Header to PHP (prevents Apache from stripping JWT tokens)
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+# Fallback for environments where mod_rewrite doesn't forward Authorization
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1

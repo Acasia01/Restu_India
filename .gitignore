@@ -1,0 +1,109 @@
+# =========================
+# GENERAL
+# =========================
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# =========================
+# ENV FILES (IMPORTANT)
+# =========================
+.env
+.env.*
+!.env.example
+.env.local
+
+# =========================
+# PYTHON / DJANGO (BACKEND)
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Django stuff
+*.sqlite3
+backend/db.sqlite3
+backend/media/
+staticfiles/
+
+# Migrations (optional - keep if needed)
+# **/migrations/*
+# !**/migrations/__init__.py
+
+# =========================
+# NODE / REACT (FRONTEND)
+# =========================
+restu-india/node_modules/
+restu-india/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+build/
+dist/
+
+# React env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# IDE / EDITOR FILES
+# =========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# =========================
+# TEST / COVERAGE
+# =========================
+coverage/
+htmlcov/
+
+# =========================
+# CACHE / TOOLING
+# =========================
+.cache/
+.parcel-cache/
+
+# =========================
+# OS FILES
+# =========================
+*.bak
+*.orig
+
+# Python / Django
+backend/venv/
+*.pyc
+backend/__pycache__/
+backend/db.sqlite3
+backend/venv/
+backend/env/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Large Assets
+images/
+
+backend/staticfiles/
+
+.env
+.env.local
+.env.development
+.env.production
+
+node_modules/
