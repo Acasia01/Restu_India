@@ -35,7 +35,7 @@ const dbFile = path.join(__dirname, 'mock_db.json');
 if (!fs.existsSync(dbFile)) {
   const initialData = {
     users: [
-      { _id: "admin_user_id", name: "System Admin", email: "admin@restuindia.in", password: "adminpassword", role: "admin", createdAt: new Date().toISOString() }
+      { _id: "admin_user_id", name: "System Admin", email: "admin@restuindia.in", password: "Acasia@101122", role: "admin", createdAt: new Date().toISOString() }
     ],
     categories: [
       { _id: "cat_beds",        name: "Beds",          slug: "beds",          description: "Premium hospital and fowler beds.", image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=400&q=80" },
